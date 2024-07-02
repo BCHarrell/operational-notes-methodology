@@ -1,0 +1,15 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "openPorts": "multitext",
+    "services": "multitext",
+    "examined": "checkbox",
+    "finding": "checkbox",
+    "startDate": "date",
+    "endDate": "date",
+    "opType": "text",
+    "privilegeLevel": "text"
+  }
+}

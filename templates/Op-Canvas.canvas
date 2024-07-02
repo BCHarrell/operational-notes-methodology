@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"d6222db07a9012fb","type":"group","x":-360,"y":-460,"width":1160,"height":700,"label":"DomainName"},
+		{"id":"13b34b445fd6e790","x":100,"y":-220,"width":250,"height":190,"type":"text","text":"Add notes / image files here\n\nor you can add cards and reference files through normal linking"}
+	],
+	"edges":[]
+}

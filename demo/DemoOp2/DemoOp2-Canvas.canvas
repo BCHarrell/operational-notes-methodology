@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"d6222db07a9012fb","type":"group","x":-360,"y":-640,"width":1940,"height":880,"label":"client.com"},
+		{"id":"786f85adfba7a4f2","type":"group","x":-360,"y":360,"width":1480,"height":700,"label":"dev.client.com"},
+		{"id":"7ecd853de2144185","type":"file","file":"DemoOp2/Content/srv01.client.com.md","x":920,"y":-608,"width":298,"height":196},
+		{"id":"f0c5f1a40e5eeda7","type":"file","file":"DemoOp2/Content/Patient-Zero.md","x":-320,"y":-180,"width":300,"height":200},
+		{"id":"5ef2f4122cf5437d","type":"file","file":"DemoOp2/Images/kerberoast.png","x":28,"y":0,"width":325,"height":207},
+		{"id":"99745620f3433318","type":"text","text":"![[DemoOp2-DomainInfo#dev.client.com]]","x":-347,"y":380,"width":375,"height":220},
+		{"id":"a9085f8994d489fa","type":"file","file":"DemoOp2/Content/devsql02.dev.client.com.md","x":80,"y":400,"width":400,"height":400},
+		{"id":"937400010d29cc55","type":"text","text":"![[DemoOp2-DomainInfo#client.com Info]]","x":-347,"y":-620,"width":485,"height":220},
+		{"id":"4090611bdbe9787f","type":"file","file":"DemoOp2/Content/filesrv.client.com.md","x":280,"y":-540,"width":285,"height":153},
+		{"id":"2f0f5b2a58daba63","type":"file","file":"DemoOp2/Images/creds-riskastley.png","x":620,"y":-412,"width":266,"height":112}
+	],
+	"edges":[
+		{"id":"478b8aae56579726","fromNode":"f0c5f1a40e5eeda7","fromSide":"bottom","toNode":"5ef2f4122cf5437d","toSide":"left","label":"kerberoasted 3 SPNs"},
+		{"id":"1a1c665968d8b648","fromNode":"5ef2f4122cf5437d","fromSide":"bottom","toNode":"a9085f8994d489fa","toSide":"top","label":"cracked hash for client\\sql_dev\nmember of dev\\sql admins"},
+		{"id":"9fdfc1a4f1bad546","fromNode":"f0c5f1a40e5eeda7","fromSide":"right","toNode":"4090611bdbe9787f","toSide":"left","label":"share enum with\ndomain user"},
+		{"id":"51f0b79b0b4b890a","fromNode":"4090611bdbe9787f","fromSide":"right","toNode":"7ecd853de2144185","toSide":"left","label":"admin creds in\n\\users\\rick_astley\\creds.txt"}
+	]
+}

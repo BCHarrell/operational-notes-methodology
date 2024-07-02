@@ -1,0 +1,62 @@
+.graph-view.color-fill-unresolved { 
+ color: #ff0000; !important
+}
+
+.markdown-preview-view h2 {
+    color: #6fd2f2;
+}
+
+.cm-header-2 {
+    color: #6fd2f2;
+}
+
+.markdown-preview-view h3 {
+    color: #a691d4;
+}
+
+.cm-header-3 {
+    color: #a691d4;
+}
+
+.markdown-preview-view h4 {
+    color: #e38b54;
+}
+
+.cm-header-4 {
+    color: #e38b54;
+}
+
+.markdown-preview-view h5 {
+    color: #e38b54;
+}
+
+.cm-header-5 {
+    color: #e38b54;
+}
+
+.cm-s-obsidian span.cm-inline-code {
+    color: #d90f00;
+}
+
+/* Modified by Christian (Chhrriissyy#6548). Original by MooddooM */
+/* This version sets the line focus for both edit and insert mode. */
+/* If you want to make it edit mode only, add the `.cm-fat-cursor` CSS class selector to both light & dark mode. /*
+
+/* Cursor color in normal vim mode and opacity */
+.cm-fat-cursor .CodeMirror-cursor, .cm-animate-fat-cursor {
+    width: 0.5em;
+    background: #d65d0e;
+    opacity: 60% !important;
+}
+
+/* LIGHT MODE */
+/*if you want the highlight to present in both normal and insert mode of vim*/
+.theme-light /* .cm-fat-cursor */ .CodeMirror-activeline .CodeMirror-linebackground{
+    background-color: #2f2f2f;
+    opacity: 10%
+}
+
+/* DARK MODE */
+.theme-dark /* .cm-fat-cursor */ .CodeMirror-activeline .CodeMirror-linebackground {
+    background-color: #f1f1f1;
+    opacity: 30%;
