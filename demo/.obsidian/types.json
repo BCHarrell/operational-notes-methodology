@@ -10,6 +10,7 @@
     "startDate": "date",
     "endDate": "date",
     "opType": "text",
-    "privilegeLevel": "text"
+    "privilegeLevel": "text",
+    "followUp": "checkbox"
   }
 }

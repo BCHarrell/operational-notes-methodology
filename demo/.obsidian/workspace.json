@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DemoOp2/DemoOp2-Tracker.md",
+                "file": "DemoOp/DemoOp-Tracker.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DemoOp2/DemoOp2-Tracker.md",
+                "file": "DemoOp/DemoOp-Tracker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DemoOp2/DemoOp2-Tracker.md",
+                "file": "DemoOp/DemoOp-Tracker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DemoOp2/DemoOp2-Tracker.md"
+                "file": "DemoOp/DemoOp-Tracker.md"
               }
             }
           }
@@ -148,12 +148,12 @@
   },
   "active": "3cad7e8b05e4b16f",
   "lastOpenFiles": [
+    "DemoOp2/DemoOp2-Tracker.md",
     "DemoOp2/DemoOp2-Canvas.canvas",
     "DemoOp2/DemoOp2-Findings.md",
     "DemoOp2/Content/filesrv.client.com.md",
     "DemoOp2/Content/srv01.client.com.md",
     "DemoOp2/Content/Patient-Zero.md",
-    "DemoOp2/DemoOp2-Tracker.md",
     "DemoOp2/Content/devsql02.dev.client.com.md",
     "OpName-Tracker.md",
     "DemoOp2/DemoOp2-DomainInfo.md",

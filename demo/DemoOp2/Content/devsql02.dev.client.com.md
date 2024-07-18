@@ -3,6 +3,7 @@ openPorts:
 services: 
 finding: 
 privilegeLevel: admin
+followUp: true
 ---
 
 Assessment Tracker: [[DemoOp2-Tracker]]
