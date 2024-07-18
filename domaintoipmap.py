@@ -1,38 +1,6 @@
 import argparse
 import socket
-from contextlib import contextmanager
-import signal
 
-def raise_error(signum, frame):
-    """This handler will raise an error inside gethostbyname"""
-    raise OSError
-
-@contextmanager
-def set_signal(signum, handler):
-    """Temporarily set signal"""
-    old_handler = signal.getsignal(signum)
-    signal.signal(signum, handler)
-    try:
-        yield
-    finally:
-        signal.signal(signum, old_handler)
-
-@contextmanager
-def set_alarm(time):
-    """Temporarily set alarm"""
-    signal.setitimer(signal.ITIMER_REAL, time)
-    try:
-        yield
-    finally:
-        signal.setitimer(signal.ITIMER_REAL, 0) # Disable alarm
-
-@contextmanager
-def raise_on_timeout(time):
-    """This context manager will raise an OSError unless
-    The with scope is exited in time."""
-    with set_signal(signal.SIGALRM, raise_error):
-        with set_alarm(time): 
-            yield
 
 def read_file(filename):
 	hosts = []
@@ -60,13 +28,14 @@ def fetch_ips(hosts):
 
 	for host in hosts:	
 		host = host.rstrip()
-		print("Resolving host: {0}".format(host))
+		print("Resolving host: {0}".format(host), end="... ")
 		try:
-			with raise_on_timeout(1.5): # Timeout 1.5s
-				s = socket.gethostbyname(host)
-				mapping.append({"host": host, "ip": s})
+			s = socket.gethostbyname(host)
+			mapping.append({"host": host, "ip": s})
+			print(s)
 		except:
 			mapping.append({"host": host, "ip": ""})
+			print("failed")
 			continue
 
 	return mapping

@@ -206,4 +206,7 @@ of the `write_X_X` functions.
 
 If you want to parse other file types and add frontmatter, the `replace_frontmatter` function should work to insert it
 into the right field in the template, but you'll need to add your own parser. I may break this program up into modules/classes
-later to make this easier, but for now ¯\_(ツ)_/¯.
+later to make this easier, but for now ¯\\_(ツ)_/¯.
+
+# Domain to IP Map
+Super rudimentary tool... the alarm wasn't working to change the timeout on `socket.gethostbyname()` so it's slow when a domain doesn't map to a live host. Might update this in the future to thread the requests, but this is just a simple way to create a csv of host,ip. Use something else if preferred.
